@@ -1,24 +1,57 @@
 # Node.js
 node_modules/
-.env
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*.local
+
+# React build
+build/
+dist/
 
 # Docker
-*.log
-docker-compose.override.yml
-.docker/
+.dockerignore
+Dockerfile*
+docker-compose.yml
+**/docker-compose.override.yml
+**/.docker/
 
 # C#
 bin/
 obj/
 *.user
 *.suo
-*.userosscache
-*.sln.docstates
-.vs/
+*.cache
+*.csproj.user
+*.pdb
+*.mdb
+*.log
 
-# Frontend build
-frontend/build/
-
-# VS Code
+# VSCode / IDE
 .vscode/
+.idea/
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+*.tlog
+*.vspscc
+
+# Misc
+*.tgz
+*.gz
+*.zip
+*.7z
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# Git conflicts
+*.orig
